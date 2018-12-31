@@ -1,0 +1,29 @@
+
+//a button when clicked , increase in value by checking its previouse value state.
+
+class Button extends React.Component{
+ state = {counter: 0};
+ 
+ handleClick = () => {
+ // handleclick reads the counter out of state, then increment and update the state with new 	  value
+  //this === component instance
+	//setsState is a react built in  button
+	//set state is asyncronyse , might  be bad for performace
+  //
+ this.setState((prevState) => {
+	return {
+		counter: prevState.counter + 1
+			}
+		})
+ };
+  render(){
+	return (
+  	<button onClick ={this.handleClick}>
+    {this.state.counter}
+    </button>
+    
+	 );
+	}
+}
+
+ReactDOM.render(<Button/>, mountNode);
