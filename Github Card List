@@ -13,6 +13,7 @@ const Card = (props) => {
     );
 };
 
+//this is raw data that we are using for now , we will fetch up from github later on.
 let data = [
 {      name:" Hassan Liaquat",
     	avatar_url:" https://avatars0.githubusercontent.com/u/36779439?v=4",
