@@ -12,3 +12,23 @@ const Card = (props) => {
      </div> 
     );
 };
+
+let data = [
+{      name:" Hassan Liaquat",
+    	avatar_url:" https://avatars0.githubusercontent.com/u/36779439?v=4",
+      company: "FDM Group" },
+{
+      name:"Oleksii Trekhleb",
+    	avatar_url: "https://avatars2.githubusercontent.com/u/3000285?v=4",
+      company:	"@aggregatus-io " },
+];
+
+const CardList = (props) => {
+	return (
+  	<div>
+ 			{props.cards.map(card => <Card {...card} />)}
+    </div>
+  );
+}
+
+ReactDOM.render(<CardList cards={data} />, mountNode);
