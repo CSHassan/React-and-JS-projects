@@ -1,1 +1,24 @@
+//Started working on the game , will update more tomarrow
 
+class Game extends React.Component {
+render() {
+retrun (
+	 	<div>
+	 	  <h3>Play Nine</h3>
+    	</div>
+		);
+	}
+}
+
+class App extends React.Component {
+render() {
+retrun (
+	 	<div>
+	 	  <Game />
+      
+	 	</div>
+		);
+	}
+}
+
+ReactDom.render(<App />, mountNode);
