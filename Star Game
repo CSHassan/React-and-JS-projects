@@ -1,6 +1,7 @@
 //Started working on the game , will update more tomarrow
 //IDE:https://jscomplete.com/repl
 //worked on the basic of the game
+// TODO: comment code properly
 
 const Stars = (props) => {
   return (
