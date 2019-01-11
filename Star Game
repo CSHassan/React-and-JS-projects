@@ -2,7 +2,7 @@
 //IDE:https://jscomplete.com/repl
 //worked on the basic of the game
 // TODO: comment code properly
-// TODO: fix game bug where it does show 1 star properlys
+// TODO: fix game bug where it does show 1 star properly
 
 
 const Stars = (props) => {
