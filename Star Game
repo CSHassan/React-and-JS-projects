@@ -3,7 +3,6 @@
 //worked on the basic of the game
 
 
-
 const Stars = (props) => {
   return (
     <div className="col-5">
@@ -32,7 +31,6 @@ const Answer = (props) => {
     </div>
   );
 };
-
 
 
 const Numbers = (props) => {
