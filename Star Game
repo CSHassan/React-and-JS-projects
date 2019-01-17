@@ -2,18 +2,20 @@
 //IDE:https://jscomplete.com/repl
 //worked on the basic of the game
 //2019-01-16 , added the random number of stars method
-
+// ^^ , added /fixed numbers to get me a random number.
 
 const Stars = (props) => {
 //generator a random number for the stars
+
+
+
+const Stars = (props) => {
 const numberOfStars = 1 + Math.floor( Math.random()*9);
 
 let stars =[]
-//pushes the random star number we generatored above into acutal shapes and display for the user.
 for(let i=0;i<numberOfStars;i++){
 stars.push(<i key={i} className ="fa fa-star"></i>);
 }
-
   return (
     <div className="col-5">
       {stars}
@@ -34,24 +36,34 @@ const Button = (props) => {
 const Answer = (props) => {
   return (
     <div className="col-5">
-      ...
-    </div>
+      <span>5</span>
+			<span>6</span>
+	</div>
   );
 };
 
 
 const Numbers = (props) => {
+// using map and filter instead of loops since its shorter, although same result could be seen.
+//using lowdash to create an array of  seqence of numbers.
+//also using range from 1-10 to includes all number since its not exclusive
+
+//const arrayOfNumbers = _.range(1,10);
+
   return (
     <div className="card text-center">
       <div>
-        <span>1</span>
-        <span className="selected">2</span>
-        <span className="used">3</span>
+      {Numbers.list.map((number,i) =>
+      	<span key={i}>{number}</span>
+      
+      	)}
+            
       </div>
     </div>
   );
 };
 
+Numbers.list =_.range(1,10);
 
 class Game extends React.Component {
   render() {
