@@ -57,7 +57,11 @@ const Numbers = (props) => {
       	<span key={i}>{number}</span>
       
       	)}
-            
+	
+        //simple test to make sures the css is working , properly highlights        
+          <span className="selected">2</span>
+          <span className="used">3</span>   
+	   
       </div>
     </div>
   );
