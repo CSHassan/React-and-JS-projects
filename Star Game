@@ -1,15 +1,22 @@
 //Started working on the game , will update more tomarrow
 //IDE:https://jscomplete.com/repl
 //worked on the basic of the game
+//2019-01-16 , added the random number of stars method
 
 
 const Stars = (props) => {
+//generator a random number for the stars
+const numberOfStars = 1 + Math.floor( Math.random()*9);
+
+let stars =[]
+//pushes the random star number we generatored above into acutal shapes and display for the user.
+for(let i=0;i<numberOfStars;i++){
+stars.push(<i key={i} className ="fa fa-star"></i>);
+}
+
   return (
     <div className="col-5">
-      <i className="fa fa-star"></i>
-      <i className="fa fa-star"></i>
-      <i className="fa fa-star"></i>
-      <i className="fa fa-star"></i>
+      {stars}
     </div>
   );
 };
