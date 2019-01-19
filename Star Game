@@ -2,7 +2,7 @@
 //IDE:https://jscomplete.com/repl
 //worked on the basic of the game
 //2019-01-16 , added the random number of stars method
-// ^^ , added /fixed numbers to get me a random number.
+// 2018-01-16 , added /fixed numbers to get me a random number.
 
 const Stars = (props) => {
 //generator a random number for the stars
