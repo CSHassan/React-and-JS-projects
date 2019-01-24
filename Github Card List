@@ -1,4 +1,5 @@
 //Uses Github api to fetch data such as username,company and avatar and convert it into a list.
+//and display them in a list
 
 const Card = (props) => {
 	return (
