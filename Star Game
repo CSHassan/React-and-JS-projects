@@ -47,7 +47,7 @@ const Numbers = (props) => {
 // using map and filter instead of loops since its shorter, although same result could be seen.
 //using lowdash to create an array of  seqence of numbers.
 //also using range from 1-10 to includes all number since its not exclusive
-
+//simple test to make sures the css is working , properly highlights   
 //const arrayOfNumbers = _.range(1,10);
 
   return (
@@ -58,7 +58,7 @@ const Numbers = (props) => {
       
       	)}
 	
-        //simple test to make sures the css is working , properly highlights        
+           
           <span className="selected">2</span>
           <span className="used">3</span>   
 	   
