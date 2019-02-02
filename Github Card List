@@ -1,5 +1,7 @@
 //Uses Github api to fetch data such as username,company and avatar and convert it into a list.
 //and display them in a list
+// A excersice to get a handle on react and js.
+//makes a github card list using https://jscomplete.com/repl
 
 const Card = (props) => {
 	return (
